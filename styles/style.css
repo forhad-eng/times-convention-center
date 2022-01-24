@@ -1,6 +1,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.smile-icon{
+    background-color: yellow;
+    border-radius: 10px;
+}
 .bi-check-circle{
     color: #5243C2;
     background-color: rgba(82, 67, 194, 0.103693);

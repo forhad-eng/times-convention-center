@@ -38,6 +38,7 @@
             </div>
           </nav>
           <!-- Toast Start-->
+              <!-- Welcome Toast Start-->
           <div class="toast bg-danger text-white fade show">
             <div class="toast-header bg-danger text-white">
                 <strong class="me-auto"><i class="bi-gift-fill"></i> Welcome back!</strong>
@@ -48,7 +49,28 @@
                 It's been a long time since you visited us. We've something special for you.
             </div>
           </div>
+              <!-- Welcome Toast End-->
+              <!-- Choose Button Toast Start -->
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <strong class="me-auto ms-1">Thanks For Choosing</strong>
+                <small>1s ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                A representative of us will contact you soon!
+                Have a good day <img class="smile-icon" width="20px" src="./icons/smile.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Choose Button Toast Start -->
           <!-- Toast End-->
+
+          <!-- Carousel Start -->
           <section class="container-fluid p-0 pb-5">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators pb-5">
@@ -58,29 +80,29 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./images/wed2.jpg" class="d-block" alt="...">
+                    <img src="./images/wed1.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-block h-50">
-                      <h3>Could be the right choice for your next event</h3>
+                      <h3 class="">Could be the right choice for your next event</h3>
                       <p>Place to make a special moment with special person</p>
                       <button class="btn btn-primary border border-info"><a class="text-decoration-none text-uppercase text-white" href="#package">book now</a>
                       </button>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/wed3.jpg" class="d-block" alt="...">
+                    <img src="./images/wed2.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-block h-50">
-                        <h3>Could be the right choice for your next event</h3>
+                        <h3 class="">Could be the right choice for your next event</h3>
                         <p>Place to make a special moment with special person</p>
-                        <button class="btn btn-primary border border-info"><a class="text-decoration-none text-uppercase text-white" href="#">book now</a>
+                        <button class="btn btn-primary border border-info"><a class="text-decoration-none text-uppercase text-white" href="#package">book now</a>
                         </button>
                       </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./images/wed1.jpg" class="d-block" alt="...">
+                    <img src="./images/wed3.jpg" class="d-block" alt="...">
                     <div class="carousel-caption d-block h-50">
-                        <h3>Could be the right choice for your next event</h3>
+                        <h3 class="">Could be the right choice for your next event</h3>
                         <p>Place to make a special moment with special person</p>
-                        <button class="btn btn-primary border border-info"><a class="text-decoration-none text-uppercase text-white" href="#">book now</a>
+                        <button class="btn btn-primary border border-info"><a class="text-decoration-none text-uppercase text-white" href="#package">book now</a>
                         </button>
                       </div>
                   </div>
@@ -95,6 +117,7 @@
                 </button>
               </div>
           </section>
+          <!-- Carousel End -->
     </header>
 
     <main>
@@ -107,17 +130,18 @@
                 <div class="col-lg-6 col-md-6 cols-sm-12 col-12 p-4">
                     <h2 class="fw-bold">Every moment is Precious</h2>
                     <p class="fw-bold text-muted">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button type="button" class="btn btn-primary">Explore our album 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                          </svg>
+                    <button type="button" class="btn btn-primary"><a class="text-decoration-none text-white" target="_blank" href="https://www.freepik.com/search?format=search&query=Bride%20groom">Explore our album 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                    </a>
                     </button>
+            
                 </div>
             </div>
         </section>
 
         <!-- Package section start-->
-
         <section id="package" class="container pt-4 mb-5">
             <h3 class="text-center fw-bold mb-5 pb-5">Our Packages</h3>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
@@ -148,7 +172,7 @@
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                           </svg> Per day bill</p>
-                          <button class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
+                          <button id="pack1" class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
                     </div>
                   </div>
                 </div>
@@ -180,7 +204,7 @@
                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                             </svg> Billed as shift</p>
-                            <button class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
+                            <button id="pack2" class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
                       </div>
                     </div>
                   </div>
@@ -212,7 +236,7 @@
                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                             </svg> Pay as plan</p>
-                            <button class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold p-2" type="button">Choose Plan</button>
+                            <button id="pack3" class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold p-2" type="button">Choose Plan</button>
                       </div>
                     </div>
                   </div>
@@ -243,13 +267,12 @@
                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                               <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
                             </svg> Pay as plan</p>
-                            <button class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
+                            <button id="pack4" class="btn btn-outline-secondary border-0 bg-light rounded-pill text-primary fw-bold" type="button">Choose Plan</button>
                       </div>
                     </div>
                   </div>
               </div>
         </section>
-
         <!-- package section end -->
 
         <!-- individual part start-->
@@ -344,12 +367,12 @@
                           </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                                 Is there any hidden charge out of the receipt?
                               </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                               <div class="accordion-body">
                                 <strong>No Sir! You can rest calm about this.</strong>
                               </div>
@@ -374,8 +397,8 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-lg-flex flex-column align-items-lg-end d-flex align-items-center order-first order-sm-first order-lg-last">
                                 <h6 class="text-white pe-3">Get the App</h6>
-                                <a href="https://play.google.com/store/apps/details?id=learn.programming.courses&hl=en"><img class="pb-3" src="./icons/App Store.svg" alt=""></a>
-                                <a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp&hl=en"><img class="" src="./icons/Google Play Store.svg" alt=""></a>
+                                <a class="pb-3" href="https://play.google.com/store/apps/details?id=learn.programming.courses&hl=en" target="_blank"><img  src="./icons/App Store.svg" alt=""></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp&hl=en" target="_blank"><img src="./icons/Google Play Store.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -384,5 +407,32 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      var packTrigger1 = document.getElementById('pack1')
+      var packTrigger2 = document.getElementById('pack2')
+      var packTrigger3 = document.getElementById('pack3')
+      var packTrigger4 = document.getElementById('pack4')
+      var toastLiveExample = document.getElementById('liveToast')
+      if (packTrigger1){
+          packTrigger1.addEventListener('click', function (){
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            })}
+      if (packTrigger2){
+          packTrigger2.addEventListener('click', function (){
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            })}
+      if (packTrigger3){
+          packTrigger3.addEventListener('click', function (){
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            })}
+      if (packTrigger4){
+          packTrigger4.addEventListener('click', function (){
+            var toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            })}
+    </script>
 </body>
 </html>
